@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SolutionRoot CoveredStatements="111" TotalStatements="111" CoveragePercent="100" ReportType="Xml" DotCoverVersion="2020.3.4">
+  <Project Name="Homework1" CoveredStatements="42" TotalStatements="42" CoveragePercent="100">
+    <Namespace Name="Homework1" CoveredStatements="42" TotalStatements="42" CoveragePercent="100">
+      <Type Name="Calculator" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
+        <Method Name="Calculate(int,Operations,int):double" CoveredStatements="7" TotalStatements="7" CoveragePercent="100" />
+      </Type>
+      <Type Name="Extensions" CoveredStatements="12" TotalStatements="12" CoveragePercent="100">
+        <Method Name="TryParseToOperation(string,out Operations):bool" CoveredStatements="12" TotalStatements="12" CoveragePercent="100" />
+      </Type>
+      <Type Name="Parser" CoveredStatements="10" TotalStatements="10" CoveragePercent="100">
+        <Method Name="TryParseArguments(string[],out int,out int):bool" CoveredStatements="10" TotalStatements="10" CoveragePercent="100" />
+      </Type>
+      <Type Name="Program" CoveredStatements="13" TotalStatements="13" CoveragePercent="100">
+        <Method Name="Main(string[]):int" CoveredStatements="13" TotalStatements="13" CoveragePercent="100" />
+      </Type>
+    </Namespace>
+  </Project>
+  <Project Name="Homework1.Tests" CoveredStatements="69" TotalStatements="69" CoveragePercent="100">
+    <Namespace Name="Homework1.Tests" CoveredStatements="69" TotalStatements="69" CoveragePercent="100">
+      <Type Name="CalculatorTests" CoveredStatements="16" TotalStatements="16" CoveragePercent="100">
+        <Method Name="Calculate_1401Minus64_1337Returned():void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" />
+        <Method Name="Calculate_220Plus8_228Returned():void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" />
+        <Method Name="Calculate_359Divide4_89dot75Returned():void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" />
+        <Method Name="Calculate_4Multiply372_1488Returned():void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" />
+      </Type>
+      <Type Name="ExtensionsTests" CoveredStatements="25" TotalStatements="25" CoveragePercent="100">
+        <Method Name="TryParseToOperation_OperationDivide_TrueReturned():void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100" />
+        <Method Name="TryParseToOperation_OperationMinus_TrueReturned():void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100" />
+        <Method Name="TryParseToOperation_OperationMultiply_TrueReturned():void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100" />
+        <Method Name="TryParseToOperation_OperationPlus_TrueReturned():void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100" />
+        <Method Name="TryParseToOperation_UnknownOperation_FalseReturned():void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100" />
+      </Type>
+      <Type Name="ParserTests" CoveredStatements="16" TotalStatements="16" CoveragePercent="100">
+        <Method Name="TryParseArguments_IncorrectOperation_CorrectParse_TrueReturned():void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100" />
+        <Method Name="TryParseArguments_NotCalculateSyntax_FalseReturned():void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" />
+        <Method Name="TryParseArguments_Parse31Plus112_TrueReturned():void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100" />
+      </Type>
+      <Type Name="ProgramTests" CoveredStatements="12" TotalStatements="12" CoveragePercent="100">
+        <Method Name="Program_CantParseArguments_1Returned():void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" />
+        <Method Name="Program_CantParseOperation_2Returned():void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" />
+        <Method Name="Program_CorrectArgumentsAndOperation_0Returned():void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" />
+      </Type>
+    </Namespace>
+  </Project>
+</SolutionRoot>
