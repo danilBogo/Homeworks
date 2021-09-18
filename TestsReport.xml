@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <SolutionRoot CoveredStatements="111" TotalStatements="111" CoveragePercent="100" ReportType="Xml" DotCoverVersion="2020.3.4">
   <Project Name="Homework1" CoveredStatements="42" TotalStatements="42" CoveragePercent="100">
     <Namespace Name="Homework1" CoveredStatements="42" TotalStatements="42" CoveragePercent="100">
