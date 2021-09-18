@@ -8,7 +8,7 @@ namespace Homework1.Tests
         public void TryParseArguments_Parse31Plus112_TrueReturned()
         {
             var res = Parser.TryParseArguments(new[] {"31","+","112"}, out var val1, out var val2);
-            Assert.Equal(true, res);
+            Assert.True(res);
             Assert.Equal(31,val1);
             Assert.Equal(112,val2);
         }
@@ -17,7 +17,7 @@ namespace Homework1.Tests
         public void TryParseArguments_IncorrectOperation_CorrectParse_TrueReturned()
         {
             var res = Parser.TryParseArguments(new[] {"11", "x", "300"}, out var val1, out var val2);
-            Assert.Equal(true, res);
+            Assert.True(res);
             Assert.Equal(11,val1);
             Assert.Equal(300,val2);
         }
@@ -26,7 +26,7 @@ namespace Homework1.Tests
         public void TryParseArguments_NotCalculateSyntax_FalseReturned()
         {
             var res =  Parser.TryParseArguments(new[] {"x", "+", "123"}, out var val1, out var val2);
-            Assert.Equal(false,res);
+            Assert.False(res);
         }
     }
 }
