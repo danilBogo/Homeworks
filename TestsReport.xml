@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root CoveredStatements="111" TotalStatements="111" CoveragePercent="100" ReportType="DetailedXml" DotCoverVersion="2021.2.1">
+  <FileIndices>
+    <File Index="1" Name="D:\trash\Homeworks\Homeworks\Homework1\Calculator.cs" ChecksumAlgorithm="SHA256" Checksum="8F84F1A9C7B81439BB47CE33123F2F8F2BD5F7A9DCA3E04808E047E2244F61EB" />
+    <File Index="2" Name="D:\trash\Homeworks\Homeworks\Homework1\Extensions.cs" ChecksumAlgorithm="SHA256" Checksum="F75346C706A30485AA18705085D459FC23D49A169F71EE48F66BDE4E0D0B8CC2" />
+    <File Index="3" Name="D:\trash\Homeworks\Homeworks\Homework1\Parser.cs" ChecksumAlgorithm="SHA256" Checksum="0F0677153E2B31B4A5BBD0E23F6D37B3E596E4895EDBC97D3F81CDA9336241FE" />
+    <File Index="4" Name="D:\trash\Homeworks\Homeworks\Homework1\Program.cs" ChecksumAlgorithm="SHA256" Checksum="BB5785F8B0D49B115C1A5DC4A8C8702DA79EB229F3B96BDD7A35D8ACCE8D4B4C" />
+    <File Index="5" Name="D:\trash\Homeworks\Homeworks\Homework1\obj\Debug\net5.0\.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" ChecksumAlgorithm="SHA256" Checksum="3DAB221DDB7A8D7D050731DC8D289DF26D56F7DABEB91B3D7F96E5CB6C994C29" />
+    <File Index="6" Name="D:\trash\Homeworks\Homeworks\Homework1\obj\Debug\net5.0\Homework1.AssemblyInfo.cs" ChecksumAlgorithm="SHA256" Checksum="AC94F66800AFCA0BB827E1F079D86759CC0059A163DA6100FD9C6E3757D35827" />
+    <File Index="7" Name="D:\trash\Homeworks\Homeworks\Homework1.Tests\Calculator.Tests.cs" ChecksumAlgorithm="SHA256" Checksum="20A8B32CCFB65A6B4E20AEA35AA806B6758C8CBC015B1E5CF017D3317DCC59A9" />
+    <File Index="8" Name="D:\trash\Homeworks\Homeworks\Homework1.Tests\Extensions.Tests.cs" ChecksumAlgorithm="SHA256" Checksum="5C1A602863ACFFD174F683B44E65BEB94990AAF3B6231BB14AEF65A1AFD28F62" />
+    <File Index="9" Name="D:\trash\Homeworks\Homeworks\Homework1.Tests\Parser.Tests.cs" ChecksumAlgorithm="SHA256" Checksum="08571056C6617EAAA1C116605A8AE4B3ADDF93952136D46A815850000C344B93" />
+    <File Index="10" Name="D:\trash\Homeworks\Homeworks\Homework1.Tests\Program.Tests.cs" ChecksumAlgorithm="SHA256" Checksum="56B724C9B0255E7F24F9E41A9A15849961891881A0EF487074F4385BAC3CD2F7" />
+    <File Index="11" Name="C:\Users\nin13\.nuget\packages\microsoft.net.test.sdk\16.9.4\build\netcoreapp2.1\Microsoft.NET.Test.Sdk.Program.cs" ChecksumAlgorithm="SHA256" Checksum="D66F12F9433816A8C7DC1B2ACB9E1010F5418F5EEB51E80F1DF57AA1DCAB8D8A" />
+    <File Index="12" Name="D:\trash\Homeworks\Homeworks\Homework1.Tests\obj\Debug\net5.0\.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" ChecksumAlgorithm="SHA256" Checksum="3DAB221DDB7A8D7D050731DC8D289DF26D56F7DABEB91B3D7F96E5CB6C994C29" />
+    <File Index="13" Name="D:\trash\Homeworks\Homeworks\Homework1.Tests\obj\Debug\net5.0\Homework1.Tests.AssemblyInfo.cs" ChecksumAlgorithm="SHA256" Checksum="F27E125B0021C1E2B3C5C225362C92657583A480CB9CE74F27F783368EC0E506" />
+  </FileIndices>
+  <Assembly Name="Homework1" CoveredStatements="42" TotalStatements="42" CoveragePercent="100">
+    <Namespace Name="Homework1" CoveredStatements="42" TotalStatements="42" CoveragePercent="100">
+      <Type Name="Calculator" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
+        <Method Name="Calculate(System.Int32,Homework1.Operations,System.Int32):System.Double" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
+          <Statement FileIndex="1" Line="12" Column="9" EndLine="12" EndColumn="10" Covered="True" />
+          <Statement FileIndex="1" Line="13" Column="13" EndLine="19" EndColumn="15" Covered="True" />
+          <Statement FileIndex="1" Line="15" Column="36" EndLine="15" EndColumn="47" Covered="True" />
+          <Statement FileIndex="1" Line="16" Column="37" EndLine="16" EndColumn="48" Covered="True" />
+          <Statement FileIndex="1" Line="17" Column="40" EndLine="17" EndColumn="51" Covered="True" />
+          <Statement FileIndex="1" Line="18" Column="38" EndLine="18" EndColumn="57" Covered="True" />
+          <Statement FileIndex="1" Line="20" Column="9" EndLine="20" EndColumn="10" Covered="True" />
+        </Method>
+      </Type>
+      <Type Name="Extensions" CoveredStatements="12" TotalStatements="12" CoveragePercent="100">
+        <Method Name="TryParseToOperation(System.String,Homework1.Operations):System.Boolean" CoveredStatements="12" TotalStatements="12" CoveragePercent="100">
+          <Statement FileIndex="2" Line="8" Column="9" EndLine="8" EndColumn="10" Covered="True" />
+          <Statement FileIndex="2" Line="9" Column="13" EndLine="16" EndColumn="15" Covered="True" />
+          <Statement FileIndex="2" Line="11" Column="24" EndLine="11" EndColumn="39" Covered="True" />
+          <Statement FileIndex="2" Line="12" Column="24" EndLine="12" EndColumn="40" Covered="True" />
+          <Statement FileIndex="2" Line="13" Column="24" EndLine="13" EndColumn="43" Covered="True" />
+          <Statement FileIndex="2" Line="14" Column="24" EndLine="14" EndColumn="41" Covered="True" />
+          <Statement FileIndex="2" Line="15" Column="22" EndLine="15" EndColumn="40" Covered="True" />
+          <Statement FileIndex="2" Line="17" Column="13" EndLine="17" EndColumn="50" Covered="True" />
+          <Statement FileIndex="2" Line="17" Column="51" EndLine="17" EndColumn="63" Covered="True" />
+          <Statement FileIndex="2" Line="18" Column="13" EndLine="18" EndColumn="69" Covered="True" />
+          <Statement FileIndex="2" Line="19" Column="13" EndLine="19" EndColumn="26" Covered="True" />
+          <Statement FileIndex="2" Line="20" Column="9" EndLine="20" EndColumn="10" Covered="True" />
+        </Method>
+      </Type>
+      <Type Name="Parser" CoveredStatements="10" TotalStatements="10" CoveragePercent="100">
+        <Method Name="TryParseArguments(System.String[],System.Int32,System.Int32):System.Boolean" CoveredStatements="10" TotalStatements="10" CoveragePercent="100">
+          <Statement FileIndex="3" Line="9" Column="9" EndLine="9" EndColumn="10" Covered="True" />
+          <Statement FileIndex="3" Line="10" Column="13" EndLine="10" EndColumn="61" Covered="True" />
+          <Statement FileIndex="3" Line="11" Column="13" EndLine="11" EndColumn="61" Covered="True" />
+          <Statement FileIndex="3" Line="12" Column="13" EndLine="12" EndColumn="42" Covered="True" />
+          <Statement FileIndex="3" Line="13" Column="13" EndLine="13" EndColumn="14" Covered="True" />
+          <Statement FileIndex="3" Line="14" Column="17" EndLine="14" EndColumn="99" Covered="True" />
+          <Statement FileIndex="3" Line="15" Column="17" EndLine="15" EndColumn="18" Covered="True" />
+          <Statement FileIndex="3" Line="16" Column="21" EndLine="16" EndColumn="34" Covered="True" />
+          <Statement FileIndex="3" Line="19" Column="13" EndLine="19" EndColumn="25" Covered="True" />
+          <Statement FileIndex="3" Line="20" Column="9" EndLine="20" EndColumn="10" Covered="True" />
+        </Method>
+      </Type>
+      <Type Name="Program" CoveredStatements="13" TotalStatements="13" CoveragePercent="100">
+        <Method Name="Main(System.String[]):System.Int32" CoveredStatements="13" TotalStatements="13" CoveragePercent="100">
+          <Statement FileIndex="4" Line="8" Column="9" EndLine="8" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="9" Column="13" EndLine="9" EndColumn="94" Covered="True" />
+          <Statement FileIndex="4" Line="10" Column="13" EndLine="10" EndColumn="33" Covered="True" />
+          <Statement FileIndex="4" Line="11" Column="13" EndLine="11" EndColumn="14" Covered="True" />
+          <Statement FileIndex="4" Line="12" Column="17" EndLine="12" EndColumn="86" Covered="True" />
+          <Statement FileIndex="4" Line="13" Column="17" EndLine="13" EndColumn="37" Covered="True" />
+          <Statement FileIndex="4" Line="14" Column="17" EndLine="14" EndColumn="18" Covered="True" />
+          <Statement FileIndex="4" Line="15" Column="21" EndLine="15" EndColumn="78" Covered="True" />
+          <Statement FileIndex="4" Line="16" Column="21" EndLine="16" EndColumn="76" Covered="True" />
+          <Statement FileIndex="4" Line="17" Column="21" EndLine="17" EndColumn="30" Covered="True" />
+          <Statement FileIndex="4" Line="20" Column="17" EndLine="20" EndColumn="26" Covered="True" />
+          <Statement FileIndex="4" Line="23" Column="13" EndLine="23" EndColumn="22" Covered="True" />
+          <Statement FileIndex="4" Line="24" Column="9" EndLine="24" EndColumn="10" Covered="True" />
+        </Method>
+      </Type>
+    </Namespace>
+  </Assembly>
+  <Assembly Name="Homework1.Tests" CoveredStatements="69" TotalStatements="69" CoveragePercent="100">
+    <Namespace Name="Homework1.Tests" CoveredStatements="69" TotalStatements="69" CoveragePercent="100">
+      <Type Name="CalculatorTests" CoveredStatements="16" TotalStatements="16" CoveragePercent="100">
+        <Method Name="Calculate_1401Minus64_1337Returned():System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="7" Line="15" Column="9" EndLine="15" EndColumn="10" Covered="True" />
+          <Statement FileIndex="7" Line="16" Column="13" EndLine="16" EndColumn="72" Covered="True" />
+          <Statement FileIndex="7" Line="17" Column="13" EndLine="17" EndColumn="36" Covered="True" />
+          <Statement FileIndex="7" Line="18" Column="9" EndLine="18" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Calculate_220Plus8_228Returned():System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="7" Line="9" Column="9" EndLine="9" EndColumn="10" Covered="True" />
+          <Statement FileIndex="7" Line="10" Column="13" EndLine="10" EndColumn="69" Covered="True" />
+          <Statement FileIndex="7" Line="11" Column="13" EndLine="11" EndColumn="35" Covered="True" />
+          <Statement FileIndex="7" Line="12" Column="9" EndLine="12" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Calculate_359Divide4_89dot75Returned():System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="7" Line="29" Column="9" EndLine="29" EndColumn="10" Covered="True" />
+          <Statement FileIndex="7" Line="30" Column="13" EndLine="30" EndColumn="71" Covered="True" />
+          <Statement FileIndex="7" Line="31" Column="13" EndLine="31" EndColumn="39" Covered="True" />
+          <Statement FileIndex="7" Line="32" Column="9" EndLine="32" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Calculate_4Multiply372_1488Returned():System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="7" Line="22" Column="9" EndLine="22" EndColumn="10" Covered="True" />
+          <Statement FileIndex="7" Line="23" Column="13" EndLine="23" EndColumn="73" Covered="True" />
+          <Statement FileIndex="7" Line="24" Column="13" EndLine="24" EndColumn="36" Covered="True" />
+          <Statement FileIndex="7" Line="25" Column="9" EndLine="25" EndColumn="10" Covered="True" />
+        </Method>
+      </Type>
+      <Type Name="ExtensionsTests" CoveredStatements="25" TotalStatements="25" CoveragePercent="100">
+        <Method Name="TryParseToOperation_OperationDivide_TrueReturned():System.Void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
+          <Statement FileIndex="8" Line="30" Column="9" EndLine="30" EndColumn="10" Covered="True" />
+          <Statement FileIndex="8" Line="31" Column="13" EndLine="31" EndColumn="66" Covered="True" />
+          <Statement FileIndex="8" Line="32" Column="13" EndLine="32" EndColumn="30" Covered="True" />
+          <Statement FileIndex="8" Line="33" Column="13" EndLine="33" EndColumn="55" Covered="True" />
+          <Statement FileIndex="8" Line="34" Column="9" EndLine="34" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="TryParseToOperation_OperationMinus_TrueReturned():System.Void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
+          <Statement FileIndex="8" Line="16" Column="9" EndLine="16" EndColumn="10" Covered="True" />
+          <Statement FileIndex="8" Line="17" Column="13" EndLine="17" EndColumn="66" Covered="True" />
+          <Statement FileIndex="8" Line="18" Column="13" EndLine="18" EndColumn="30" Covered="True" />
+          <Statement FileIndex="8" Line="19" Column="13" EndLine="19" EndColumn="54" Covered="True" />
+          <Statement FileIndex="8" Line="20" Column="9" EndLine="20" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="TryParseToOperation_OperationMultiply_TrueReturned():System.Void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
+          <Statement FileIndex="8" Line="23" Column="9" EndLine="23" EndColumn="10" Covered="True" />
+          <Statement FileIndex="8" Line="24" Column="13" EndLine="24" EndColumn="66" Covered="True" />
+          <Statement FileIndex="8" Line="25" Column="13" EndLine="25" EndColumn="30" Covered="True" />
+          <Statement FileIndex="8" Line="26" Column="13" EndLine="26" EndColumn="57" Covered="True" />
+          <Statement FileIndex="8" Line="27" Column="9" EndLine="27" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="TryParseToOperation_OperationPlus_TrueReturned():System.Void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
+          <Statement FileIndex="8" Line="9" Column="9" EndLine="9" EndColumn="10" Covered="True" />
+          <Statement FileIndex="8" Line="10" Column="13" EndLine="10" EndColumn="66" Covered="True" />
+          <Statement FileIndex="8" Line="11" Column="13" EndLine="11" EndColumn="30" Covered="True" />
+          <Statement FileIndex="8" Line="12" Column="13" EndLine="12" EndColumn="53" Covered="True" />
+          <Statement FileIndex="8" Line="13" Column="9" EndLine="13" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="TryParseToOperation_UnknownOperation_FalseReturned():System.Void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
+          <Statement FileIndex="8" Line="38" Column="9" EndLine="38" EndColumn="10" Covered="True" />
+          <Statement FileIndex="8" Line="39" Column="13" EndLine="39" EndColumn="66" Covered="True" />
+          <Statement FileIndex="8" Line="40" Column="13" EndLine="40" EndColumn="31" Covered="True" />
+          <Statement FileIndex="8" Line="41" Column="13" EndLine="41" EndColumn="56" Covered="True" />
+          <Statement FileIndex="8" Line="42" Column="9" EndLine="42" EndColumn="10" Covered="True" />
+        </Method>
+      </Type>
+      <Type Name="ParserTests" CoveredStatements="16" TotalStatements="16" CoveragePercent="100">
+        <Method Name="TryParseArguments_IncorrectOperation_CorrectParse_TrueReturned():System.Void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
+          <Statement FileIndex="9" Line="18" Column="9" EndLine="18" EndColumn="10" Covered="True" />
+          <Statement FileIndex="9" Line="19" Column="13" EndLine="19" EndColumn="102" Covered="True" />
+          <Statement FileIndex="9" Line="20" Column="13" EndLine="20" EndColumn="30" Covered="True" />
+          <Statement FileIndex="9" Line="21" Column="13" EndLine="21" EndColumn="35" Covered="True" />
+          <Statement FileIndex="9" Line="22" Column="13" EndLine="22" EndColumn="36" Covered="True" />
+          <Statement FileIndex="9" Line="23" Column="9" EndLine="23" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="TryParseArguments_NotCalculateSyntax_FalseReturned():System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="9" Line="27" Column="9" EndLine="27" EndColumn="10" Covered="True" />
+          <Statement FileIndex="9" Line="28" Column="13" EndLine="28" EndColumn="102" Covered="True" />
+          <Statement FileIndex="9" Line="29" Column="13" EndLine="29" EndColumn="31" Covered="True" />
+          <Statement FileIndex="9" Line="30" Column="9" EndLine="30" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="TryParseArguments_Parse31Plus112_TrueReturned():System.Void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
+          <Statement FileIndex="9" Line="9" Column="9" EndLine="9" EndColumn="10" Covered="True" />
+          <Statement FileIndex="9" Line="10" Column="13" EndLine="10" EndColumn="100" Covered="True" />
+          <Statement FileIndex="9" Line="11" Column="13" EndLine="11" EndColumn="30" Covered="True" />
+          <Statement FileIndex="9" Line="12" Column="13" EndLine="12" EndColumn="35" Covered="True" />
+          <Statement FileIndex="9" Line="13" Column="13" EndLine="13" EndColumn="36" Covered="True" />
+          <Statement FileIndex="9" Line="14" Column="9" EndLine="14" EndColumn="10" Covered="True" />
+        </Method>
+      </Type>
+      <Type Name="ProgramTests" CoveredStatements="12" TotalStatements="12" CoveragePercent="100">
+        <Method Name="Program_CantParseArguments_1Returned():System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="10" Line="10" Column="9" EndLine="10" EndColumn="10" Covered="True" />
+          <Statement FileIndex="10" Line="11" Column="13" EndLine="11" EndColumn="60" Covered="True" />
+          <Statement FileIndex="10" Line="12" Column="13" EndLine="12" EndColumn="33" Covered="True" />
+          <Statement FileIndex="10" Line="13" Column="9" EndLine="13" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Program_CantParseOperation_2Returned():System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="10" Line="16" Column="9" EndLine="16" EndColumn="10" Covered="True" />
+          <Statement FileIndex="10" Line="17" Column="13" EndLine="17" EndColumn="61" Covered="True" />
+          <Statement FileIndex="10" Line="18" Column="13" EndLine="18" EndColumn="33" Covered="True" />
+          <Statement FileIndex="10" Line="19" Column="9" EndLine="19" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Program_CorrectArgumentsAndOperation_0Returned():System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="10" Line="22" Column="9" EndLine="22" EndColumn="10" Covered="True" />
+          <Statement FileIndex="10" Line="23" Column="13" EndLine="23" EndColumn="61" Covered="True" />
+          <Statement FileIndex="10" Line="24" Column="13" EndLine="24" EndColumn="33" Covered="True" />
+          <Statement FileIndex="10" Line="25" Column="9" EndLine="25" EndColumn="10" Covered="True" />
+        </Method>
+      </Type>
+    </Namespace>
+  </Assembly>
+</Root>

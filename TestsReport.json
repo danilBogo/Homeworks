@@ -1,0 +1,250 @@
+﻿{
+ "DotCoverVersion": "2020.3.4",
+ "Kind": "SolutionRoot",
+ "CoveredStatements": 111,
+ "TotalStatements": 111,
+ "CoveragePercent": 100,
+ "Children": [
+  {
+   "Kind": "Project",
+   "Name": "Homework1",
+   "CoveredStatements": 42,
+   "TotalStatements": 42,
+   "CoveragePercent": 100,
+   "Children": [
+    {
+     "Kind": "Namespace",
+     "Name": "Homework1",
+     "CoveredStatements": 42,
+     "TotalStatements": 42,
+     "CoveragePercent": 100,
+     "Children": [
+      {
+       "Kind": "Type",
+       "Name": "Calculator",
+       "CoveredStatements": 7,
+       "TotalStatements": 7,
+       "CoveragePercent": 100,
+       "Children": [
+        {
+         "Kind": "Method",
+         "Name": "Calculate(int,Operations,int):double",
+         "CoveredStatements": 7,
+         "TotalStatements": 7,
+         "CoveragePercent": 100
+        }
+       ]
+      },
+      {
+       "Kind": "Type",
+       "Name": "Extensions",
+       "CoveredStatements": 12,
+       "TotalStatements": 12,
+       "CoveragePercent": 100,
+       "Children": [
+        {
+         "Kind": "Method",
+         "Name": "TryParseToOperation(string,out Operations):bool",
+         "CoveredStatements": 12,
+         "TotalStatements": 12,
+         "CoveragePercent": 100
+        }
+       ]
+      },
+      {
+       "Kind": "Type",
+       "Name": "Parser",
+       "CoveredStatements": 10,
+       "TotalStatements": 10,
+       "CoveragePercent": 100,
+       "Children": [
+        {
+         "Kind": "Method",
+         "Name": "TryParseArguments(string[],out int,out int):bool",
+         "CoveredStatements": 10,
+         "TotalStatements": 10,
+         "CoveragePercent": 100
+        }
+       ]
+      },
+      {
+       "Kind": "Type",
+       "Name": "Program",
+       "CoveredStatements": 13,
+       "TotalStatements": 13,
+       "CoveragePercent": 100,
+       "Children": [
+        {
+         "Kind": "Method",
+         "Name": "Main(string[]):int",
+         "CoveredStatements": 13,
+         "TotalStatements": 13,
+         "CoveragePercent": 100
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "Kind": "Project",
+   "Name": "Homework1.Tests",
+   "CoveredStatements": 69,
+   "TotalStatements": 69,
+   "CoveragePercent": 100,
+   "Children": [
+    {
+     "Kind": "Namespace",
+     "Name": "Homework1.Tests",
+     "CoveredStatements": 69,
+     "TotalStatements": 69,
+     "CoveragePercent": 100,
+     "Children": [
+      {
+       "Kind": "Type",
+       "Name": "CalculatorTests",
+       "CoveredStatements": 16,
+       "TotalStatements": 16,
+       "CoveragePercent": 100,
+       "Children": [
+        {
+         "Kind": "Method",
+         "Name": "Calculate_1401Minus64_1337Returned():void",
+         "CoveredStatements": 4,
+         "TotalStatements": 4,
+         "CoveragePercent": 100
+        },
+        {
+         "Kind": "Method",
+         "Name": "Calculate_220Plus8_228Returned():void",
+         "CoveredStatements": 4,
+         "TotalStatements": 4,
+         "CoveragePercent": 100
+        },
+        {
+         "Kind": "Method",
+         "Name": "Calculate_359Divide4_89dot75Returned():void",
+         "CoveredStatements": 4,
+         "TotalStatements": 4,
+         "CoveragePercent": 100
+        },
+        {
+         "Kind": "Method",
+         "Name": "Calculate_4Multiply372_1488Returned():void",
+         "CoveredStatements": 4,
+         "TotalStatements": 4,
+         "CoveragePercent": 100
+        }
+       ]
+      },
+      {
+       "Kind": "Type",
+       "Name": "ExtensionsTests",
+       "CoveredStatements": 25,
+       "TotalStatements": 25,
+       "CoveragePercent": 100,
+       "Children": [
+        {
+         "Kind": "Method",
+         "Name": "TryParseToOperation_OperationDivide_TrueReturned():void",
+         "CoveredStatements": 5,
+         "TotalStatements": 5,
+         "CoveragePercent": 100
+        },
+        {
+         "Kind": "Method",
+         "Name": "TryParseToOperation_OperationMinus_TrueReturned():void",
+         "CoveredStatements": 5,
+         "TotalStatements": 5,
+         "CoveragePercent": 100
+        },
+        {
+         "Kind": "Method",
+         "Name": "TryParseToOperation_OperationMultiply_TrueReturned():void",
+         "CoveredStatements": 5,
+         "TotalStatements": 5,
+         "CoveragePercent": 100
+        },
+        {
+         "Kind": "Method",
+         "Name": "TryParseToOperation_OperationPlus_TrueReturned():void",
+         "CoveredStatements": 5,
+         "TotalStatements": 5,
+         "CoveragePercent": 100
+        },
+        {
+         "Kind": "Method",
+         "Name": "TryParseToOperation_UnknownOperation_FalseReturned():void",
+         "CoveredStatements": 5,
+         "TotalStatements": 5,
+         "CoveragePercent": 100
+        }
+       ]
+      },
+      {
+       "Kind": "Type",
+       "Name": "ParserTests",
+       "CoveredStatements": 16,
+       "TotalStatements": 16,
+       "CoveragePercent": 100,
+       "Children": [
+        {
+         "Kind": "Method",
+         "Name": "TryParseArguments_IncorrectOperation_CorrectParse_TrueReturned():void",
+         "CoveredStatements": 6,
+         "TotalStatements": 6,
+         "CoveragePercent": 100
+        },
+        {
+         "Kind": "Method",
+         "Name": "TryParseArguments_NotCalculateSyntax_FalseReturned():void",
+         "CoveredStatements": 4,
+         "TotalStatements": 4,
+         "CoveragePercent": 100
+        },
+        {
+         "Kind": "Method",
+         "Name": "TryParseArguments_Parse31Plus112_TrueReturned():void",
+         "CoveredStatements": 6,
+         "TotalStatements": 6,
+         "CoveragePercent": 100
+        }
+       ]
+      },
+      {
+       "Kind": "Type",
+       "Name": "ProgramTests",
+       "CoveredStatements": 12,
+       "TotalStatements": 12,
+       "CoveragePercent": 100,
+       "Children": [
+        {
+         "Kind": "Method",
+         "Name": "Program_CantParseArguments_1Returned():void",
+         "CoveredStatements": 4,
+         "TotalStatements": 4,
+         "CoveragePercent": 100
+        },
+        {
+         "Kind": "Method",
+         "Name": "Program_CantParseOperation_2Returned():void",
+         "CoveredStatements": 4,
+         "TotalStatements": 4,
+         "CoveragePercent": 100
+        },
+        {
+         "Kind": "Method",
+         "Name": "Program_CorrectArgumentsAndOperation_0Returned():void",
+         "CoveredStatements": 4,
+         "TotalStatements": 4,
+         "CoveragePercent": 100
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
