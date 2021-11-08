@@ -1,6 +1,5 @@
 using System.Net.Http;
 using System.Threading.Tasks;
-using Homework8;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.AspNetCore.TestHost;
@@ -48,5 +47,13 @@ namespace Homework8.Tests
 			await CheckResult(v1, operation, v2, expected);
 		}
 		
+		[Fact]
+		public async Task Program_DivideByZero_DivideByZeroExceptionReturned()
+		{
+			var response =
+				await client.GetAsync($"http://localhost:5000/Calculator/Divide?arg1=10&arg2=0");
+			var result = await response.Content.ReadAsStringAsync();
+			Assert.Equal("Divide by zero exception", result);
+		}
 	}
 }
