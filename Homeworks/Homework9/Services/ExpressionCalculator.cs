@@ -18,8 +18,8 @@ namespace Homework9.Services
 
         protected override Expression VisitBinary(BinaryExpression node)
         {
-            var left = node.Left.Evaluate();
-            var right = node.Right.Evaluate();
+            var left = Task.Run(() => node.Left.Evaluate()) ;
+            var right = Task.Run(()=> node.Right.Evaluate());
             Task.WaitAll(left, right);
             var leftValue = left.Result;
             var rightValue = right.Result;
