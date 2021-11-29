@@ -9,28 +9,27 @@ namespace Homework9.Services
     {
         public decimal Calculate(string expression)
         {
-            Thread.Sleep(1000);
-            var buildedExpression = ExpressionTreeBuilder.BuildExpression(expression.GetUrlWithPluses());
+            var buildedExpression = ExpressionTreeBuilder.BuildExpression(expression);
             return Visit(buildedExpression) is ConstantExpression constantExpression
-                ? (decimal) constantExpression.Value
-                : throw new Exception($"Invalid expression: {expression}");
+                ? (decimal)constantExpression.Value : 
+                throw new ArgumentException($"Invalid expression: {expression}");
         }
 
         protected override Expression VisitBinary(BinaryExpression node)
         {
-            var left = Task.Run(() => node.Left.Evaluate()) ;
-            var right = Task.Run(()=> node.Right.Evaluate());
-            Task.WaitAll(left, right);
-            var leftValue = left.Result;
-            var rightValue = right.Result;
+            var leftNodeTask = Task.Run(() => (decimal)((ConstantExpression)Visit(node.Left)).Value);
+            var rightNodeTask = Task.Run(() => (decimal)((ConstantExpression)Visit(node.Right)).Value);
+            Thread.Sleep(1000);
+            Task.WhenAll(leftNodeTask, rightNodeTask);
+            var leftNode = leftNodeTask.Result;
+            var rightNode = rightNodeTask.Result;
+
             return node.NodeType switch
             {
-                ExpressionType.Add => Expression.Constant(leftValue + rightValue),
-                ExpressionType.Subtract => Expression.Constant(leftValue - rightValue),
-                ExpressionType.Multiply => Expression.Constant(leftValue * rightValue),
-                ExpressionType.Divide => Expression.Constant(leftValue / rightValue),
-                _ => throw new
-                    InvalidOperationException($"Operation: {node.Method} not supported")
+                ExpressionType.Add => Expression.Constant(leftNode + rightNode, typeof(decimal)),
+                ExpressionType.Subtract => Expression.Constant(leftNode - rightNode, typeof(decimal)),
+                ExpressionType.Multiply => Expression.Constant(leftNode * rightNode, typeof(decimal)),
+                ExpressionType.Divide => Expression.Constant(leftNode / rightNode, typeof(decimal))
             };
         }
     }

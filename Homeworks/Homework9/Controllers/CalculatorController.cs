@@ -17,7 +17,7 @@ namespace Homework9.Controllers
         [HttpGet]
         public string Calculate(string expression)
         {
-            return calculator.Calculate(expression).ToString(CultureInfo.InvariantCulture);
+            return calculator.Calculate(expression.GetUrlWithPluses()).ToString(CultureInfo.InvariantCulture);
         }
     }
 }
