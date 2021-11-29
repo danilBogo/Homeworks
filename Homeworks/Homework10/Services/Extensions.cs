@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq.Expressions;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Homework10.Services
@@ -13,9 +14,8 @@ namespace Homework10.Services
 
         public static async Task<decimal> Evaluate(this Expression expression)
         {
-            if (expression is ConstantExpression constantExpression)
+            if (expression is ConstantExpression { Value: { } } constantExpression)
                 return await Task.FromResult((decimal)constantExpression.Value);
-
             if (expression is not BinaryExpression node) return 0;
             var left = node.Left.Evaluate();
             var right = node.Right.Evaluate();
