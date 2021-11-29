@@ -3,8 +3,8 @@
     public enum TokenType
     {
         Number = 0,
-        LeftParenthesis = 1,
-        RightParenthesis = 2,
+        OpenBracket = 1,
+        CloseBracket = 2,
         Operation = 3
     }
     public class Token
