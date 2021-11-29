@@ -2,8 +2,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework1", "Homework1\Homework1.csproj", "{5A8D9160-CB15-4115-8517-2E433D64986D}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HW1", "HW1", "{3AAB7E2B-1691-4329-9E96-2E900CAFC677}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework1.Tests", "Homework1.Tests\Homework1.Tests.csproj", "{F9907734-C945-483B-B9DC-F7F482ED5DFA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework8", "Homework8\Homework8.csproj", "{FE3944C6-6D27-4842-9993-B4B7F5F1BB17}"

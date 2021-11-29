@@ -60,6 +60,9 @@ namespace Homework10.Tests
         [Theory]
         [InlineData("220+8" ,"228")]
         [InlineData("2+2*2","6")]
+        [InlineData("1+2+3+4+5","15")]
+        [InlineData("1*2*3*4*5","120")]
+        [InlineData("(10*10)+(18+12)/(25-15)","103")]
         [InlineData("(10+15)*(23-20)/(10*10)+22/11","2.75")]
         public async Task Program_CorrectValues_CorrectResultReturned(string expression,string expected)
         {
@@ -70,6 +73,8 @@ namespace Homework10.Tests
         [InlineData("10*(5+5)")]
         [InlineData("100/20/5*88")]
         [InlineData("((23-3)+(22+8))/(12+8)")]
+        [InlineData("(123*12*11")]
+        [InlineData("(12-20)/(13+11)*(100-12)/(22-21)")]
         public async Task Program_CacheValues_SecondResIsFaster(string expression)
         {
             var time1 = await MeasureTimeAsync(expression);
