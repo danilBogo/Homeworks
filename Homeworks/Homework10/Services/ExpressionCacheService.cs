@@ -12,6 +12,7 @@ namespace Homework10.Services
         {
             this.context = context;
         }
+
         public void Add(CalculatorExpression expression)
         {
             context.Expressions.Add(expression);

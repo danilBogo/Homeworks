@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using System.Linq.Expressions;
 
-
 namespace Homework10.Services
 {
-public static class ExpressionTreeBuilder
+    public static class ExpressionTreeBuilder
     {
         private static readonly Dictionary<string, int> OperatorPrecedence = new()
         {
@@ -72,6 +71,7 @@ public static class ExpressionTreeBuilder
                 _ => throw new InvalidOperationException($"Operation '{operation}' is not supported")
             };
         }
+
         private static readonly List<char> Operations = new() { '+', '-', '/', '*' };
         private static bool IsOperation(char symbol) => Operations.Contains(symbol);
 
@@ -103,7 +103,7 @@ public static class ExpressionTreeBuilder
         private static Token GetNumberToken(string expression, int position)
         {
             var length = 0;
-            while (position + ++length < expression.Length && char.IsDigit(expression, position + length));
+            while (position + ++length < expression.Length && char.IsDigit(expression, position + length)) ;
             return new Token(expression.Substring(position, length), TokenType.Number);
         }
     }

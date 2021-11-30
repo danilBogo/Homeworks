@@ -11,8 +11,8 @@ namespace Homework10.Services
         {
             var buildedExpression = ExpressionTreeBuilder.BuildExpression(expression);
             return Visit(buildedExpression) is ConstantExpression constantExpression
-            ? (decimal)constantExpression.Value : 
-            throw new ArgumentException($"Invalid expression: {expression}");
+                ? (decimal)constantExpression.Value
+                : throw new ArgumentException($"Invalid expression: {expression}");
         }
 
         protected override Expression VisitBinary(BinaryExpression node)

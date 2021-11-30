@@ -1,7 +1,6 @@
-﻿
-namespace Homework10.Services
+﻿namespace Homework10.Services
 {
-    public abstract class CalculatorDecorator: ICalculator
+    public abstract class CalculatorDecorator : ICalculator
     {
         protected readonly ICalculator Calculator;
 
@@ -9,9 +8,10 @@ namespace Homework10.Services
         {
             Calculator = calculator;
         }
+
         public virtual decimal Calculate(string expression)
         {
-           return Calculator.Calculate(expression);
+            return Calculator.Calculate(expression);
         }
     }
 }

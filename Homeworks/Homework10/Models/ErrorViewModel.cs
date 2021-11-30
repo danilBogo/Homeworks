@@ -1,5 +1,3 @@
-using System;
-
 namespace Homework10.Models
 {
     public class ErrorViewModel

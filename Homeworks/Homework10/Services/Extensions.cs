@@ -1,9 +1,4 @@
-﻿using System;
-using System.Linq.Expressions;
-using System.Threading;
-using System.Threading.Tasks;
-
-namespace Homework10.Services
+﻿namespace Homework10.Services
 {
     public static class ExpressionExtensions
     {

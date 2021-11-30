@@ -7,6 +7,7 @@
         CloseBracket = 2,
         Operation = 3
     }
+
     public class Token
     {
         public string Value { get; }
