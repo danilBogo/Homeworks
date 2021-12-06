@@ -21,7 +21,7 @@ namespace Homework11.Services
                 ExpressionType.Subtract => leftNode - rightNode,
                 ExpressionType.Multiply => leftNode * rightNode,
                 ExpressionType.Divide => leftNode / rightNode,
-                _ => throw new InvalidOperationException($"unsupported opperation - {node}")
+                _ => throw new InvalidOperationException($"unsupported operation - {node}")
             };
         }
 

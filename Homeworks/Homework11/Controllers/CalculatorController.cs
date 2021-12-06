@@ -25,7 +25,7 @@ namespace Homework11.Controllers
             }
             catch (Exception e)
             {
-                handler.Handle(e);
+                handler.HandleDynamic(e);
                 return "";
             }
         }

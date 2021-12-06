@@ -15,22 +15,28 @@ namespace Homework11.ExceptionHandler
         {
             logger.LogError(exception.Message);
         }
+
+        public void HandleDynamic(Exception exception)
+        {
+            Handle((dynamic)exception);
+        }
+
         public void Handle(DivideByZeroException exception)
         {
-            logger.LogError($"was divide by zero: {exception.Message}");
+            logger.LogError($"was divide by zero {exception.Message}");
         }
         public void Handle(InvalidCastException exception)
         {
-            logger.LogError($"failed cast: {exception.Message}");
+            logger.LogError($"failed cast {exception.Message}");
         }
         public void Handle(InvalidOperationException exception)
         {
-            logger.LogError($"the argument received null: {exception.Message}");
+            logger.LogError($"received unknown operation {exception.Message}");
         }
 
         public void Handle(ArgumentException exception)
         {
-            logger.LogError($"invalid argument was received: {exception.Message}");
+            logger.LogError($"invalid argument was received {exception.Message}");
         }
     }
 }

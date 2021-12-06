@@ -4,7 +4,7 @@ using System.Linq.Expressions;
 
 namespace Homework11.Services
 {
-public static class ExpressionTreeBuilder
+    public static class ExpressionTreeBuilder
     {
         private static readonly Dictionary<string, int> OperatorPrecedence = new()
         {
