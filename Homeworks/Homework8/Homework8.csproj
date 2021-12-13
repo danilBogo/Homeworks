@@ -8,4 +8,8 @@
       <_ContentIncludedByDefault Remove="Views\Calculator\Index.cshtml" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="MiniProfiler.AspNetCore.Mvc" Version="4.2.22" />
+    </ItemGroup>
+
 </Project>

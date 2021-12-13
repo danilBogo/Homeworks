@@ -17,26 +17,30 @@ namespace Homework8.Controllers
         }
 
         [HttpGet]
-        public string Add(double arg1, double arg2)
+        public IActionResult Add(double arg1, double arg2)
         {
-            return calculator.Calculate(arg1, Operation.Plus, arg2).ToString(CultureInfo.InvariantCulture);
+            var result = calculator.Calculate(arg1, Operation.Plus, arg2).ToString(CultureInfo.InvariantCulture);
+            return View("Calculate",new Calculation(result));
         }
         [HttpGet]
-        public string Minus(double arg1, double arg2)
+        public IActionResult Minus(double arg1, double arg2)
         {
-            return calculator.Calculate(arg1, Operation.Minus, arg2).ToString(CultureInfo.InvariantCulture);
+            var result = calculator.Calculate(arg1, Operation.Minus, arg2).ToString(CultureInfo.InvariantCulture);
+            return View("Calculate", new Calculation(result));
         }
         [HttpGet]
-        public string Multiply(double arg1, double arg2)
+        public IActionResult Multiply(double arg1, double arg2)
         {
-            return calculator.Calculate(arg1, Operation.Multiply, arg2).ToString(CultureInfo.InvariantCulture);
+            var result = calculator.Calculate(arg1, Operation.Multiply, arg2).ToString(CultureInfo.InvariantCulture);
+            return View("Calculate", new Calculation(result));
         }
         [HttpGet]
-        public string Divide(double arg1, double arg2)
+        public IActionResult Divide(double arg1, double arg2)
         {
-            return arg2 == 0
+            var result = arg2 == 0
                 ? "Divide by zero exception"
                 : calculator.Calculate(arg1, Operation.Divide, arg2).ToString(CultureInfo.InvariantCulture);
+            return View("Calculate", new Calculation(result));
         }
     }
 }

@@ -25,6 +25,7 @@ namespace Homework8
         {
             services.AddControllersWithViews();
             services.AddTransient<ICalculator, DefaultCalculator>();
+            services.AddMiniProfiler();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -45,8 +46,8 @@ namespace Homework8
             app.UseStaticFiles();
 
             app.UseRouting();
-
             app.UseAuthorization();
+            app.UseMiniProfiler();
 
             app.UseEndpoints(endpoints =>
             {
